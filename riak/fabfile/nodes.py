@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from fabric.api import env, task
 
+
 @task
-def member():
+def dev():
     env.hosts = [
         '10.0.0.1',
         '10.0.0.2',
@@ -19,3 +20,4 @@ def member():
             '10.0.0.4',
         ],
     }
+    env.data_dir = '/var/lib/riak'

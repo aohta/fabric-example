@@ -4,7 +4,6 @@ from fabric.operations import put
 from fabric.context_managers import cd
 from fabric.contrib.files import sed
 
-import cuisine
 
 @task
 def sync_config():
